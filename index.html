@@ -4,50 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>נוטריון מוסמך | שירות מקצועי ואמין</title>
-
   <style>
+    /* כללי */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-      color: #ffffff;
+      color: #fff;
       text-align: center;
-      padding: 60px 20px;
+      padding: 50px 20px;
     }
-
     .container {
       max-width: 900px;
       margin: auto;
     }
-
     h1 {
-      font-size: 42px;
+      font-size: 46px;
       color: #d4af37;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
-
+    h2 {
+      color: #f5e1a4;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
     p {
       font-size: 18px;
       line-height: 1.8;
       color: #e0e0e0;
     }
 
+    /* רשימת שירותים */
     .services {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 17px;
+      text-align: right;
+    }
+    .services li {
+      margin: 10px 0;
+      padding-left: 15px;
+      position: relative;
+    }
+    .services li:before {
+      content: "✔";
+      position: absolute;
+      left: -20px;
+      color: #25d366;
+      font-weight: bold;
     }
 
-    .services span {
-      display: block;
-      margin: 8px 0;
-    }
-
+    /* כפתור וואטסאפ */
     .whatsapp-btn {
       display: inline-block;
       margin-top: 50px;
-      padding: 18px 32px;
+      padding: 18px 35px;
       background-color: #25D366;
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
       font-size: 20px;
       font-weight: bold;
@@ -55,16 +67,30 @@
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
-
     .whatsapp-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 12px 25px rgba(0,0,0,0.4);
     }
 
+    /* Footer */
     footer {
       margin-top: 80px;
       font-size: 14px;
       color: #aaaaaa;
+    }
+
+    /* רספונסיב */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      p, .services {
+        font-size: 16px;
+      }
+      .whatsapp-btn {
+        font-size: 18px;
+        padding: 15px 25px;
+      }
     }
   </style>
 </head>
@@ -74,17 +100,28 @@
     <h1>נוטריון מוסמך לשירותכם</h1>
 
     <p>
-      שירותי נוטריון מקצועיים, אמינים ומהירים, עם יחס אישי וליווי מלא לאורך כל התהליך.
-      אנו מספקים פתרונות נוטריוניים מדויקים, תוך הקפדה על סטנדרטים משפטיים גבוהים,
-      זמינות גבוהה ודיסקרטיות מלאה.
+      שירותי נוטריון מקצועיים, מהירים ואמינים.  
+      אנו מציעים ליווי אישי ומקצועי לכל סוגי המסמכים והפעולות המשפטיות.
     </p>
 
-    <div class="services">
-      <span>✔ אימות וחתימה על מסמכים</span>
-      <span>✔ תרגום נוטריוני</span>
-      <span>✔ ייפוי כוח נוטריוני</span>
-      <span>✔ אישורים משפטיים וחוזים</span>
-    </div>
+    <h2>השירותים שלנו כוללים:</h2>
+    <ul class="services">
+      <li>אימות וחתימה על מסמכים רשמיים</li>
+      <li>תרגום נוטריוני של מסמכים</li>
+      <li>ייפוי כוח נוטריוני</li>
+      <li>תצהירים ואישורים משפטיים</li>
+      <li>אישור מסמכים לחו"ל</li>
+      <li>חתימה על חוזים והסכמים</li>
+      <li>ייעוץ משפטי קצר ומקצועי</li>
+      <li>טיפול במסמכים דחופים</li>
+      <li>שירות דיסקרטי ואישי לכל לקוח</li>
+    </ul>
+
+    <h2>למה לבחור בנו?</h2>
+    <p>
+      יחס אישי, זמינות גבוהה ודיסקרטיות מלאה.  
+      כל המסמכים נבדקים בקפידה ועומדים בכל התקנים המשפטיים הנדרשים.
+    </p>
 
     <a
       class="whatsapp-btn"
