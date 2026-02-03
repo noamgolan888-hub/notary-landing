@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>האתר שלי</title>
+</head>
+<body>
+  <h1>זה עובד 🎉</h1>
+</body>
+</html>
